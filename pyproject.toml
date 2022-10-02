@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm[toml]"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+write_to = "async_itertools/_version.py"
+
+[project]
+name = "async-itertools"
+description = "Routines for asynchronous iterables"
+readme = "README.rst"
+authors = [
+    {name="Zhang Xiaoyu"},
+]
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dynamic =["version"]
+dependencies = [
+
+]
+
+[project.urls]
+"Homepage" = "https://github.com/gszxy/async-itertools"
+
+[tool.setuptools.packages.find]
+include = ["async_itertools*"]
