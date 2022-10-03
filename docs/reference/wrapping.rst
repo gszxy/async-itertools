@@ -1,9 +1,7 @@
 Wrapping
 =========================
 
-.. py:module:: async_itertools
-
-.. py:function:: as_async(iterable: Iterable[_T], interval: float = 0) -> AsyncIterable[_T]:
+.. py:function:: as_async(iterable: Iterable[_T], interval: float = 0) -> AsyncIterable[_T]
    :async:
 
    Warp an ``Iterable`` into an ``AsyncIterable``, with an optional interval(``asyncio.sleep``)

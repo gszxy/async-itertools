@@ -25,12 +25,14 @@ Overview
 ------------------------
 
 This section gives a simple overview of all available functions.
-For detailed usage, please refer to the document.
+For detailed usage, please refer to the `document <https://async-itertools.readthedocs.io/en/latest/>`_.
 
 +-----------+------------------------------------------------------------------+
 |category   |functions                                                         |
 +===========+==================================================================+
 |grouping   |                                                                  |
++-----------+------------------------------------------------------------------+
+|combining  |``chain``                                                         |
 +-----------+------------------------------------------------------------------+
 |windowing  |                                                                  |
 +-----------+------------------------------------------------------------------+
@@ -38,7 +40,6 @@ For detailed usage, please refer to the document.
 +-----------+------------------------------------------------------------------+
 |others     |                                                                  |
 +-----------+------------------------------------------------------------------+
-
 
 
 Build and Test
