@@ -1,6 +1,10 @@
 async-itertools
 =================
 
+.. image:: https://readthedocs.org/projects/async-itertools/badge/?version=latest
+   :target: https://async-itertools.readthedocs.io/en/latest/?badge=latest
+   :alt: Documentation Status
+
 This library provides wrappers and routines inspired by ``itertools``
 and ``more_itertools``, but for **asynchronous** iterables.
 
