@@ -3,7 +3,7 @@ from unittest import IsolatedAsyncioTestCase
 import async_itertools
 
 
-class TestAsAsync(IsolatedAsyncioTestCase):
+class TestChain(IsolatedAsyncioTestCase):
 
     async def test_simple_case(self):
         self.assertListEqual(
