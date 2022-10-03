@@ -1,9 +1,26 @@
 async-itertools
 =================
 
+.. image:: https://img.shields.io/github/license/gszxy/async-itertools
+   :target: https://github.com/gszxy/async-itertools/blob/main/LICENSE
+   :alt: License
+
+.. image:: https://img.shields.io/github/workflow/status/gszxy/async-itertools/Test%20commits%20and%20pull%20requests
+   :target: https://github.com/gszxy/async-itertools/actions/workflows/test_commit_pr.yml
+   :alt: Test Status
+
 .. image:: https://readthedocs.org/projects/async-itertools/badge/?version=latest
    :target: https://async-itertools.readthedocs.io/en/latest/?badge=latest
    :alt: Documentation Status
+
+.. image:: https://img.shields.io/pypi/v/async-itertools
+   :target: https://pypi.org/project/async-itertools/
+   :alt: PyPI Version
+
+.. image:: https://img.shields.io/pypi/pyversions/async-itertools
+   :target: https://pypi.org/project/async-itertools/
+   :alt: Supported Python Versions
+
 
 This library provides wrappers and routines inspired by ``itertools``
 and ``more_itertools``, but for **asynchronous** iterables.
