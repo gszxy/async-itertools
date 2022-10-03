@@ -46,4 +46,4 @@ jobs:
         mypy -p async_itertools
     - name: Test with pytest
       run: |
-        pytest --cov=async_itertools --cov-branch --cov-fail-under=100
+        pytest --cov=async_itertools --cov-report=term-missing:skip-covered --cov-fail-under=100
