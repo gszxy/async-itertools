@@ -17,4 +17,4 @@ class TestAsAsync(IsolatedAsyncioTestCase):
         start = time.time()
         assert nums == [item async for item in async_itertools.as_async(nums, 0.01)]
         duration = time.time() - start
-        self.assertAlmostEqual(duration, 0.05, delta=0.01)
+        self.assertGreater(duration, 0.05)
