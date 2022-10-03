@@ -30,11 +30,46 @@ For detailed usage, please refer to the document.
 +-----------+------------------------------------------------------------------+
 |windowing  |                                                                  |
 +-----------+------------------------------------------------------------------+
-|wrapping   |                                                                  |
+|wrapping   |``as_async``                                                      |
 +-----------+------------------------------------------------------------------+
 |others     |                                                                  |
 +-----------+------------------------------------------------------------------+
 
+
+
+Build and Test
+----------------------
+
+This project uses PEP-517 packaging API. This requires ``build`` package::
+
+   pip install build
+
+To build both ``sdist`` and ``wheel`` package, run::
+
+   python -m build
+
+To install all development dependencies, run::
+
+   pip install setuptools setuptools-scm tox coverage pytest pytest-cov mypy flake8 sphinx furo
+
+This project uses ``tox`` to integrate linting and testing.
+To run tests on all supported python versions(you will need to install them first), run::
+
+   tox
+
+To run static check(flake8) and type check(mypy) only, run::
+
+   tox -e linting
+
+To run tests on specific python versions, for example, on cpython3.9 and 3.10, use::
+
+   tox -e py39,py310
+
+The documents are built using ``sphinx`` and the ``furo`` theme.
+
+To build docs on linux, run::
+
+   cd docs && make html
 
 LICENSE
 ----------------------

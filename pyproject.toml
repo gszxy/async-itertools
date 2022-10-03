@@ -14,9 +14,11 @@ authors = [
 ]
 requires-python = ">=3.8"
 classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
 ]
 dynamic =["version"]
 dependencies = [
@@ -25,6 +27,18 @@ dependencies = [
 
 [project.urls]
 "Homepage" = "https://github.com/gszxy/async-itertools"
+
+[project.optional-dependencies]
+doc = [
+    "sphinx",
+    "furo",
+]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "coverage",
+    "tox",
+]
 
 [tool.setuptools.packages.find]
 include = ["async_itertools*"]
